@@ -10,6 +10,13 @@
     color: black;
 }
 
+nav #logo{
+	height: 24px;
+	width: 40px;
+	display: inline-block;
+	margin-bottom: 4px;
+}
+
 header {
 	margin-top: 2em;
 	font-family: "Lato", sans-serif;
@@ -46,6 +53,10 @@ header span{
 	font-size: 1.5em;
 	font-weight: 300;
 	visibility: hidden;
+}
+
+header .title{
+	font-size: .5em;
 }
 
 #skills h3, .portfolio-info h3, .about-me h3{

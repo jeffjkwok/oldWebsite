@@ -16,9 +16,8 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> <span class="glyphicon glyphicon-th-list"> </span> <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top"><img src="" alt=""></a>
+                <a class="navbar-brand" href="#home"><img src="images/logo.png" alt="" id="logo"><span>JKwok</span></a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -44,7 +43,7 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- Header -->
-    <header>
+    <header id='home'>
     	<div class='bg'>
 	        <div class="container blur">
 	            <div class="row">
@@ -153,19 +152,21 @@
     <script src="js/jquery.lettering.js" ></script>
     <script src="js/jquery.textillate.js" ></script>
     <script type="text/javascript">
-        // $(document).ready(function(){
-        //     $('.name').hide()
-        // })
         $(function(){
             $('.name').textillate({
                 in: {
                     shuffle: true,
                     delayScale: 3,
+                    callback: function(){
+                        $('.title').textillate({
+                            in: {
+                                effect: 'fadeInUp',
+                                sync: true
+                            }
+                        });
+                    }
                 }
             });
-            $('.title').textillate({
-
-            })
         })
     </script>
 </body>

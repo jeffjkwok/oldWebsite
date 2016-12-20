@@ -43,12 +43,40 @@ header span{
 	font-weight: 300;
 }
 
+#skills h3, .portfolio-info h3, .about-me h3{
+	font-family: "Lato", sans-serif;
+}
+
+#skills{
+	background-color: #262626;
+	height: 400px;
+}
+
+.skills-info{
+	text-align: center;
+	color: white;
+}
+
+#portfolio, #about{
+	height: 400px;
+	background-color: #F8F8F8;
+}
+
+.portfolio-info, .about-me{
+	text-align: center;
+}
+
 footer {
 	font-family: "Open Sans", sans-serif;
 }
 
 footer h3 {
 	font-weight: 700;
+	font-family: "Lato", sans-serif;
+}
+
+.link{
+	font-size: 1em
 }
 
 .icon{

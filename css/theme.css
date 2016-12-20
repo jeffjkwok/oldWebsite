@@ -1,0 +1,63 @@
+.navbar {
+	border-bottom: 2px;
+	border-style: solid;
+	border-color: black;
+	font-family: "Lato", sans-serif;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: black;
+}
+
+header {
+	margin-top: 50px;
+	font-family: "Lato", sans-serif;
+}
+
+header .bg{
+	height: 400px;
+	background-image: url('../images/picture.jpg');
+	border-bottom: 2px solid black;
+}
+
+header .head {
+	color: white;
+	border-bottom: 2px;
+	border-style: solid;
+	border-color: black;
+}
+
+header .intro {
+	color: black;
+	font-size: 1em;
+	margin-top: 9em;
+	text-align: center;
+}
+
+header .name {
+	font-size: 5em;
+}
+
+header span{
+	font-size: 24px;
+	font-weight: 300;
+}
+
+footer {
+	font-family: "Open Sans", sans-serif;
+}
+
+footer h3 {
+	font-weight: 700;
+}
+
+.icon{
+	width: 5em;
+	height: 5em;
+	padding: 5px;
+	margin: 10px;
+}
+.copyright {
+	font-size: 9px;
+	color: #bdbdbd;
+}

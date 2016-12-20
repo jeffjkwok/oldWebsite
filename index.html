@@ -16,7 +16,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> <span class="glyphicon glyphicon-th-list"> </span> <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">JKwok.</a>
+                <a class="navbar-brand" href="#page-top"><img src="" alt=""></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,7 +53,7 @@
 	                    <div class="intro">
 	                        <span class="name">Jeff Kwok</span>
 	                        <hr class="star-light">
-	                        <span class="skills">Full-Stack Developer</span>
+	                        <span class="title">Full-Stack Developer</span>
 	                    </div>
 	                </div>
 	            </div>
@@ -153,9 +153,9 @@
     <script src="js/jquery.lettering.js" ></script>
     <script src="js/jquery.textillate.js" ></script>
     <script type="text/javascript">
-        $(document).ready({
-            
-        })
+        // $(document).ready(function(){
+        //     $('.name').hide()
+        // })
         $(function(){
             $('.name').textillate({
                 in: {
@@ -163,6 +163,9 @@
                     delayScale: 3,
                 }
             });
+            $('.title').textillate({
+
+            })
         })
     </script>
 </body>

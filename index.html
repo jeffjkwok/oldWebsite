@@ -153,8 +153,16 @@
     <script src="js/jquery.lettering.js" ></script>
     <script src="js/jquery.textillate.js" ></script>
     <script type="text/javascript">
+        $(document).ready({
+            
+        })
         $(function(){
-            $('.name').textillate();
+            $('.name').textillate({
+                in: {
+                    shuffle: true,
+                    delayScale: 3,
+                }
+            });
         })
     </script>
 </body>

@@ -45,6 +45,7 @@ header span{
 
 #skills h3, .portfolio-info h3, .about-me h3{
 	font-family: "Lato", sans-serif;
+	font-weight:
 }
 
 #skills{
@@ -71,7 +72,8 @@ footer {
 }
 
 footer h3 {
-	font-weight: 700;
+	font-weight: 100;
+	font-size: 2em;
 	font-family: "Lato", sans-serif;
 }
 

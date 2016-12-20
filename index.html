@@ -168,6 +168,13 @@
                 }
             });
         })
+        var offset = 53;
+
+        $('.navbar li a').click(function(e) {
+            e.preventDefault();
+            $($(this).attr('href'))[0].scrollIntoView();
+            scrollBy(0, -offset);
+        })
     </script>
 </body>
 </html>

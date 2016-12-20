@@ -18,7 +18,7 @@ nav #logo{
 }
 
 header {
-	margin-top: 2em;
+	margin-top: 3em;
 	font-family: "Lato", sans-serif;
 }
 
@@ -31,17 +31,19 @@ header .bg{
 	border-bottom: 2px solid black;
 }
 
-header .head {
+
+
+/*header .head {
 	color: white;
 	border-bottom: 2px;
 	border-style: solid;
 	border-color: black;
-}
+}*/
 
 header .intro {
 	color: black;
 	font-size: 1em;
-	margin-top: 9em;
+	margin-top: 8em;
 	text-align: center;
 }
 

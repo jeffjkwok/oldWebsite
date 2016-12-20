@@ -3,7 +3,8 @@
 <head>
 	<title>Jeff Kwok || Portfolio</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Open+Sans:300,400,600,700" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/theme.css">
 	<link type="image/x-icon" rel="icon" href="images/favicon.ico">
 </head>
@@ -26,6 +27,9 @@
                     </li>
                     <li class="page-scroll">
                         <a href="#about">About</a>
+                    </li>
+					<li class="page-scroll">
+                        <a href="#skills">Skills</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#portfolio">Portfolio</a>
@@ -145,5 +149,13 @@
             </div>
         </div>
     </footer>
+    <script src="js/jquery-3.1.1.min.js" ></script>
+    <script src="js/jquery.lettering.js" ></script>
+    <script src="js/jquery.textillate.js" ></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.name').textillate();
+        })
+    </script>
 </body>
 </html>

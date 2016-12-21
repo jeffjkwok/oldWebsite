@@ -78,6 +78,23 @@
             <div class="row">
                 <div class="skills-info">
                     <h3>Skills and Experience</h3>
+                    <p>Currently, learning React JS</p>
+                    <p>MVC Architecture, Amazon Web Services, Algorithms, SQL, MongoDB, Angular, Node.js, Express.js, Django, Flask, Socket.io, AJAX, RESTful routing, Object Oriented Programing, Bootstrap, HTML5, CSS</p>
+                    <div class="skillbar clearfix" data-percent="85%">
+                        <div class="skillbar-title" style='background: #333333;'><span>JavaScript</span></div>
+                        <div class="skillbar-bar" style ='background: #525252'></div>
+                        <div class="skill-bar-percent">85%</div>
+                    </div>
+                    <div class="skillbar clearfix" data-percent="65%">
+                        <div class="skillbar-title" style='background: #124e8c;'><span>Swift</span></div>
+                        <div class="skillbar-bar" style ='background: #4288d0'></div>
+                        <div class="skill-bar-percent">65%</div>
+                    </div>
+                    <div class="skillbar clearfix" data-percent="75%">
+                        <div class="skillbar-title" style='background: #2c3e50;'><span>Python</span></div>
+                        <div class="skillbar-bar" style ='background: #2b3463'></div>
+                        <div class="skill-bar-percent">75%</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -155,30 +172,49 @@
     <script src="js/jquery.lettering.js" ></script>
     <script src="js/jquery.textillate.js" ></script>
     <script type="text/javascript">
-        $(function(){
-            $('.name').textillate({
-                in: {
-                    shuffle: true,
-                    delayScale: 3,
-                    callback: function(){
-                        $('.title').textillate({
-                            in: {
-                                effect: 'fadeInUp',
-                                sync: true
-                            }
-                        });
-                    }
+    // Offset function when using navbar
+    var offset = 53;
+    $('.navbar li a').click(function(e) {
+        e.preventDefault();
+        $($(this).attr('href'))[0].scrollIntoView();
+        scrollBy(0, -offset);
+    })
+    // Animating the header
+    $(function(){
+        $('.name').textillate({
+            in: {
+                shuffle: true,
+                delayScale: 3,
+                callback: function(){
+                    $('.title').textillate({
+                        in: {
+                            effect: 'fadeInUp',
+                            sync: true
+                        }
+                    });
                 }
-            });
-        })
-        // Offset function when using navbar
-        var offset = 53;
+            }
+        });
+    })
+    //  Skill bar jquery
+    $(document).ready(function(){
+    	$('.skillbar').each(function(){
+    		$(this).find('.skillbar-bar').animate({
+    			width:$(this).attr('data-percent')
+    		},5000);
+    	});
+    });
 
-        $('.navbar li a').click(function(e) {
-            e.preventDefault();
-            $($(this).attr('href'))[0].scrollIntoView();
-            scrollBy(0, -offset);
-        })
+    $('.Count').each(function () {
+      var $this = $(this);
+      $({ Counter: 0 }).animate({ Counter: $this.text() }, {
+        duration: 5000,
+        easing: 'swing',
+        step: function () {
+          $this.text(Math.ceil(this.Counter));
+        }
+      });
+    });
     </script>
 </body>
 </html>

@@ -69,6 +69,7 @@ header span{
 
 header .title{
 	font-size: .5em;
+	font-weight: 300;
 }
 
 #skills h3, .portfolio-info h3, .about-me h3{
@@ -99,6 +100,23 @@ header .title{
 
 .portfolio-info, .about-me{
 	text-align: center;
+}
+
+#about{
+	height: auto;
+	padding-bottom: 1.5em;
+}
+
+#about img {
+	width: 200px;
+	visibility: hidden;
+}
+
+#about #blurb{
+	text-align: left;
+	font-family: "Lato", sans-serif;
+	font-size: 1.1em;
+	font-weight: 300;
 }
 
 footer {

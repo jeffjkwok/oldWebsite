@@ -12,7 +12,7 @@
 
 nav #logo{
 	height: 24px;
-	width: 40px;
+	width: 35px;
 	display: inline-block;
 	margin-bottom: 4px;
 }
@@ -85,6 +85,10 @@ header .title{
 	border-bottom-color: black;
 }
 
+#skills #things{
+	visibility: hidden;
+}
+
 .skills-info{
 	text-align: center;
 	color: white;
@@ -107,17 +111,15 @@ header .title{
 	padding-bottom: 1.5em;
 }
 
-#about img {
-	width: 200px;
-	visibility: hidden;
-}
-
 #about #blurb{
-	visibility: hidden;
+	/*visibility: hidden;*/
+	vertical-align: 315%;
+	display: inline-block;
 	text-align: left;
 	font-family: "Lato", sans-serif;
 	font-size: 1.1em;
 	font-weight: 300;
+	width: 38em;
 }
 /*Footer its content*/
 footer {
@@ -216,4 +218,27 @@ width:110px;
 	line-height:35px;
 	color:#ffffff;
 	color:rgba(0, 0, 0, 0.4);
+}
+
+
+/**/
+/*body,html{height:100%;margin:0;padding:0;background:#FFFFFF}*/
+svg{
+ background:url('../images/me.jpg');
+ background-size:cover;
+ width:18em;
+ height:auto;
+ display:inline;
+ margin: 2em;
+}
+
+text{
+ font-size:10px;
+ transition:font-size .4s ease-out;
+ font-weight:900;
+ font-family:arial;
+}
+svg:hover text{
+ transition:font-size .4s ease-in;
+ font-size: 300px;
 }

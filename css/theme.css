@@ -144,7 +144,7 @@ footer h3 {
 
 footer #form form {
 	text-align: left;
-	/*display: none;*/
+	display: none;
 }
 
 .link{

@@ -236,7 +236,7 @@ svg{
  background:url('../images/me.jpg');
  background-size:cover;
  width:18em;
- height:auto;
+ height:18em;
  display:inline;
  margin: 2em;
 }

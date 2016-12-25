@@ -142,6 +142,11 @@ footer h3 {
 	font-family: "Lato", sans-serif;
 }
 
+footer #form form {
+	text-align: left;
+	/*display: none;*/
+}
+
 .link{
 	font-size: 1em
 }

@@ -130,6 +130,16 @@
                 <div class="row">
                     <div class="footer-col col-md-12">
                         <h3>Contact and Information</h3>
+                        <div id="form">
+                            <form action="https://formspree.io/csdter7@gmail.com" method="POST">
+                                <input type="hidden" name="_format" value="plain">
+                                <input type="hidden" name="_subject" value="New Submission">
+                                Name or Company: <input type="text" name="name"><br>
+                                Email: <input type="email" name="_replyto" placeholder="Your email" ><br>
+                                Message: <br><textarea cols="30" rows="10" placeholder="Message..."></textarea><br>
+                                <input type="submit" value="Send">
+                            </form>
+                        </div>
                         <ul class="list-inline">
                             <li>
                                 <div class="link">
@@ -144,7 +154,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="link">
+                                <div class="link linkedin">
                                     <a href="https://linkedin.com/in/jeffjkwok" target="_blank" ><img src="./images/linkedin.svg" id="linkedin" class='icon'></a>
                                     <p>LinkedIn</p>
                                 </div>
@@ -194,11 +204,11 @@
     //     scrollBy(0, -offset);
     // })
 
-    // Animated scrolling 
+    // Animated scrolling
     $(".navbar li a").click(function() {
         var id =  $(this).attr('href');
          $('html, body').animate({
-             scrollTop: $(id).offset().top-40
+             scrollTop: $(id).offset().top-53
          }, 1000);
      });
     // Animating the header

@@ -121,6 +121,16 @@
                     <h3>Projects and Work</h3>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 project">
+                    <img src="" alt="">
+                </div>
+                <div class="col-md-4 col-sm-6 project"></div>
+                <div class="col-md-4 col-sm-6 project"></div>
+                <div class="col-md-4 col-sm-6 project"></div>
+                <div class="col-md-4 col-sm-6 project"></div>
+                <div class="col-md-4 col-sm-6 project"></div>
+            </div>
         </div>
     </div>
 
@@ -196,21 +206,22 @@
     <script src="js/jquery.lettering.js" ></script>
     <script src="js/jquery.textillate.js" ></script>
     <script type="text/javascript">
-    // Offset function when using navbar
-    // var offset = 53;
-    // $('.navbar li a').click(function(e) {
-    //     e.preventDefault();
-    //     $($(this).attr('href'))[0].scrollIntoView();
-    //     scrollBy(0, -offset);
-    // })
 
     // Animated scrolling
-    $(".navbar li a").click(function() {
+    $(".navbar a").click(function(e) {
+        $('.navbar-nav > li').removeClass('active');
         var id =  $(this).attr('href');
+        console.log(id)
          $('html, body').animate({
              scrollTop: $(id).offset().top-53
          }, 1000);
      });
+
+     // active scroll on click
+     $('.navbar-nav > li').on('click',function(e){
+         $(this).addClass('active');
+     })
+
     // Animating the header
     $(function(){
         $('.name').textillate({
@@ -247,6 +258,7 @@
         }
       });
     });
+
     </script>
 </body>
 </html>

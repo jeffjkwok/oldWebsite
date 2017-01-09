@@ -105,11 +105,12 @@ header .title{
 }
 
 #portfolio, #about{
-	height: 400px;
+	height: auto;
 	background-color: #F8F8F8;
 	border-bottom: 2px;
 	border-bottom-style: solid;
 	border-bottom-color: black;
+	padding-bottom: 2em;
 }
 
 .portfolio-info, .about-me{
@@ -255,4 +256,50 @@ text{
 svg:hover text{
  transition:font-size .4s ease-in;
  font-size: 300px;
+}
+
+.project {
+	margin: 2px;
+	text-align: center;
+}
+
+
+.project img{
+	height: 12.75em;
+	width: auto;
+}
+
+.content-info{
+	border: 1px #d0d0d0 solid;
+	background-color: #e8e8e8;
+}
+.content-img{
+	position: relative;
+	border: 1px #d0d0d0 solid;
+}
+
+/*.content-img:hover {
+	opacity: 0.6;
+}*/
+
+.content-img .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #FFF;
+	opacity: .8;
+}
+
+.content-img:hover .after{
+	line-height: 2em;
+	display: block;
+	font-family: Helvetica;
+	font-weight: 900;
+	font-size: 6em;
+	text-align: center;
+	vertical-align: middle;
+  background: rgba(0, 0, 0, 1);
 }

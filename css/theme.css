@@ -259,14 +259,15 @@ svg:hover text{
 }
 
 .project {
-	margin: 2px;
+	margin: 0px;
+	margin-bottom: 1em;
 	text-align: center;
 }
-
 
 .project img{
 	height: 12.75em;
 	width: auto;
+
 }
 
 .content-info{
@@ -277,10 +278,6 @@ svg:hover text{
 	position: relative;
 	border: 1px #d0d0d0 solid;
 }
-
-/*.content-img:hover {
-	opacity: 0.6;
-}*/
 
 .content-img .after {
   position: absolute;

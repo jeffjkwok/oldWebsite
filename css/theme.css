@@ -102,6 +102,18 @@ header .title{
 .skills-info{
 	text-align: center;
 	color: white;
+	font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.skill-trait{
+	display: inline-block;
+	margin: 2em;
+}
+
+.skill-trait h5{
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
 }
 
 .skill-trait img{
@@ -170,7 +182,7 @@ footer #form form {
 	color: #bdbdbd;
 }
 /*Skillbar styling*/
-.skillbar {
+/*.skillbar {
 	position:relative;
 	display: block;
 	display: none;
@@ -242,7 +254,7 @@ width:110px;
 	line-height:35px;
 	color:#ffffff;
 	color:rgba(0, 0, 0, 1);
-}
+}*/
 
 
 /*picture styling*/
@@ -274,6 +286,8 @@ svg:hover text{
 	margin: 0px;
 	margin-bottom: 1em;
 	text-align: center;
+	font-family: "Oswald", sans-serif;
+	font-weight: 300;
 }
 
 .project img{

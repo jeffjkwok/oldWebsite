@@ -128,6 +128,44 @@ header .title{
 	/*display: none;*/
 }
 
+.skill-level .filled{
+	display: inline-block;
+	height: 1em;
+	width: 1em;
+	background-color: white;
+	margin: .2em;
+}
+
+.skill-level .unfilled{
+	display: inline-block;
+	height: 1em;
+	width: 1em;
+	background-color: 0;
+	margin: .2em;
+	border: 1px solid white;
+}
+
+#skills sup{
+	font-weight: 300;
+	font-family: "Lato", sans-serif;
+}
+
+#technologies {
+	text-align: center;
+	padding-right: 2.5em
+}
+
+#technologies .row{
+	/*width: 20em;*/
+}
+
+#technologies li{
+	display: inline;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	margin: .3em
+}
+
 #portfolio, #about{
 	height: auto;
 	background-color: #F8F8F8;
@@ -244,11 +282,10 @@ footer {
 	font-family: "Open Sans", sans-serif;
 }
 
-footer h3 {
+/*footer h3 {
 	font-weight: 300;
-	font-size: 2em;
 	font-family: "Lato", sans-serif;
-}
+}*/
 
 footer #form form {
 	text-align: left;

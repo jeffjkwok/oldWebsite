@@ -240,8 +240,9 @@ svg:hover text{
 }
 
 .project img{
-	height: 12.75em;
+	height: 12.9em;
 	width: auto;
+	margin: auto;
 }
 
 .content-info{

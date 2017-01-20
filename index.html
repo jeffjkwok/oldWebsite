@@ -258,7 +258,7 @@
                 <div class="col-md-4 col-sm-6 project">
                     <div class="content">
                         <div class='content-img' data-toggle='modal' data-target='#chatroom'>
-                            <img class='img-responsive mx-auto' src="./images/projects/none.jpg" alt="">
+                            <img class='img-responsive mx-auto' src="./images/projects/chatroom.png" alt="">
                             <div class='after'>
                                 <p>+</p>
                             </div>
@@ -435,53 +435,64 @@
                     <div class="footer-col col-md-12">
                         <h3>Contact and Information</h3>
                         <div id="form">
-                            <form action="https://formspree.io/csdter7@gmail.com" method="POST">
+                            <form action="https://formspree.io/csdter7@gmail.com" method="POST" class='form-horizontal'>
                                 <input type="hidden" name="_format" value="plain">
                                 <input type="hidden" name="_subject" value="New Submission">
-                                Name or Company: <input type="text" name="name"><br>
-                                Email: <input type="email" name="_replyto" placeholder="Your email" ><br>
-                                Message: <br><textarea cols="30" rows="10" placeholder="Message..." name='message'></textarea><br>
-                                <input type="submit" value="Send">
+                                <div class="form-group col-xs-12">
+                                    Name or Company: <input type="text" name="name" class='form-control'>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    Email: <input type="email" name="_replyto" placeholder="Your email" class='form-control'>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    <label>Message:</label>
+                                    <textarea cols="30" rows="12" placeholder="Message..." name='message' class='form-control'></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" value="Send" class='btn btn-default'>
+                                </div>
                             </form>
                         </div>
-                        <ul class="list-inline">
-                            <li>
-                                <div class="link">
-                                    <img src="./images/phone.png" class="icon" id="phone">
-                                    <p>626.487.1628</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="link">
-                                    <a href="mailto:jeffjkwok@gmail.com?" target="_top"><img src="./images/email.png" id="email" class='icon'></a>
-                                    <p>Email</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="link linkedin">
-                                    <a href="https://linkedin.com/in/jeffjkwok" target="_blank" ><img src="./images/linkedin.svg" id="linkedin" class='icon'></a>
-                                    <p>LinkedIn</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="link">
-                                    <a href="https://github.com/jeffjkwok" target="_blank"><img src="./images/github.png" id="github" class='icon'></a>
-                                    <p>GitHub</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="link">
-                                    <a href="https://codepen.io/jeffjkwok" target="_blank" ><img src="./images/codepen.svg" id="codepen" class='icon'></a>
-                                    <p>CodePen</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="link">
-                                    <a href="https://www.behance.net/jeffjkwok" ><img src="./images/behance.png" id="behance" class='icon'></a>
-                                    <p>Behance</p>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="row">
+                            <ul class="list-inline">
+                                <li>
+                                    <div class="link">
+                                        <img src="./images/phone.png" class="icon" id="phone">
+                                        <p>626.487.1628</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="link">
+                                        <a href="mailto:jeffjkwok@gmail.com?" target="_top"><img src="./images/email.png" id="email" class='icon'></a>
+                                        <p>Email</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="link linkedin">
+                                        <a href="https://linkedin.com/in/jeffjkwok" target="_blank" ><img src="./images/linkedin.svg" id="linkedin" class='icon'></a>
+                                        <p>LinkedIn</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="link">
+                                        <a href="https://github.com/jeffjkwok" target="_blank"><img src="./images/github.png" id="github" class='icon'></a>
+                                        <p>GitHub</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="link">
+                                        <a href="https://codepen.io/jeffjkwok" target="_blank" ><img src="./images/codepen.svg" id="codepen" class='icon'></a>
+                                        <p>CodePen</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="link">
+                                        <a href="https://www.behance.net/jeffjkwok" ><img src="./images/behance.png" id="behance" class='icon'></a>
+                                        <p>Behance</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

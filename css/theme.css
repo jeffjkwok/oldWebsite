@@ -4,7 +4,6 @@
 	border-color: black;
 	font-family: "Lato", sans-serif;
 	color: #FFFFFF;
-	/*background-color: #262626;*/
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -287,9 +286,23 @@ footer {
 	font-family: "Lato", sans-serif;
 }*/
 
-footer #form form {
+footer #form{
+	margin: 0 auto;
 	text-align: left;
+	padding: 2em;
+	background-color: #262626;
+	color: white;
+	max-width: 40em;
+	max-height: 50em;
 	display: none;
+}
+
+form{
+	margin: auto
+}
+
+textarea{
+	resize: none;
 }
 
 .list-inline, .footer-below p{

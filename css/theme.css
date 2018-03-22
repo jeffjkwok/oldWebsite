@@ -103,6 +103,7 @@ header .title{
 	color: white;
 	font-family: "Lato", sans-serif;
   font-weight: 300;
+	padding-bottom: 1em;
 }
 
 .skill-trait{
@@ -253,9 +254,12 @@ svg:hover text{
 	border: 1px #d0d0d0 solid;
 	background-color: #e8e8e8;
 }
+
 .content-img{
 	position: relative;
 	border: 1px #d0d0d0 solid;
+	-webkit-transition: background 0.5s ease;
+	transition: background 0.5s ease;
 }
 
 .content-img .after {
@@ -267,6 +271,8 @@ svg:hover text{
 	display: none;
 	color: #FFF;
 	opacity: .8;
+	-webkit-transition: background 0.5s ease;
+	transition: background 0.5s ease;
 }
 
 .content-img:hover .after{
